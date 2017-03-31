@@ -1,0 +1,44 @@
+﻿////
+|metadata|
+{
+    "name": "api-reference-guide",
+    "controlName": [],
+    "tags": [],
+    "guid": "8376e007-8d23-4b84-898a-0e6575254214",
+    "buildFlags": [],
+    "createdOn": "2015-09-23T20:38:57.6600296Z"
+}
+|metadata|
+////
+
+= API Reference Guide
+
+The application programming interface (API) is the foundation of all of our Xamarin.Forms controls. The API Reference Guide offers a definitive list of all assemblies of the {ProductName} product.
+
+
+=== Portable Assemblies
+* link:infragistics.XF.Charts.html[Infragistics.XF.Charts.dll] 
+* link:infragistics.XF.DataGrid.html[Infragistics.XF.DataGrid.dll] 
+* link:infragistics.XF.DataVisualization.html[Infragistics.XF.DataVisualization.dll] 
+* link:infragistics.XF.Gauges.html[Infragistics.XF.Gauges.dll]
+* link:infragistics.Core.html[Infragistics.Core.dll]
+* link:infragistics.Core.Charts.html[Infragistics.Core.Charts.dll]
+* link:infragistics.Core.DataGrid.html[Infragistics.Core.DataGrid.dll]
+* link:infragistics.Core.DataVisualization.html[Infragistics.Core.DataVisualization.dll]
+* link:infragistics.Core.Documents.html[Infragistics.Core.Documents.dll]
+* link:infragistics.Core.Gauges.html[Infragistics.Core.Gauges.dll]
+* link:infragistics.Core.Excel.html[Infragistics.Core.Excel.dll]
+* link:infragistics.Core.Platform.html[Infragistics.Core.Platform.dll]
+
+=== Android Assemblies
+* link:Infragistics.Xamarin.Android.Charts.html[Infragistics.Xamarin.Android.Charts.dll]
+* link:Infragistics.Xamarin.Android.DataGrid.html[Infragistics.Xamarin.Android.DataGrid.dll]
+* link:Infragistics.Xamarin.Android.DataVisualization.html[Infragistics.Xamarin.Android.DataVisualization.dll]
+* link:Infragistics.Xamarin.Android.Gauges.html[Infragistics.Xamarin.Android.Gauges.dll]
+
+=== iOS Assemblies
+* link:Infragistics.Xamarin.iOS.Charts.html[Infragistics.Xamarin.iOS.Charts.dll]
+* link:Infragistics.Xamarin.iOS.DataGrid.html[Infragistics.Xamarin.iOS.DataGrid.dll]
+* link:Infragistics.Xamarin.iOS.DataVisualization.html[Infragistics.Xamarin.iOS.DataVisualization.dll]
+* link:Infragistics.Xamarin.iOS.Gauges.html[Infragistics.Xamarin.iOS.Gauges.dll]
+

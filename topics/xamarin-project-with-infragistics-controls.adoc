@@ -1,0 +1,198 @@
+﻿////
+|metadata|
+{
+    "name": "xamarin-project-with-infragistics-controls",
+    "controlName": [],
+    "tags": [],
+    "guid": "0a470afd-160c-4ac5-9690-e92335c26e78",
+    "buildFlags": [],
+    "createdOn": "2015-09-23T20:38:46.2797104Z"
+}
+|metadata|
+////
+
+= Creating Project with Infragistics Controls
+
+== Topic Overview
+
+=== Purpose
+
+This topic explains how to create application project to use with Infragistics Xamarin.Forms controls.
+
+=== In this topic
+
+This topic contains the following sections:
+
+* <<Adding,Creating a project using Infragistics Xamarin.Forms Controls>>
+
+** <<Introduction,Introduction>>
+** <<Prerequisites,Prerequisites>>
+** <<Steps,Steps>>
+
+[[Adding]]
+== Creating a new project with Infragistics Controls
+
+[[Introduction]]
+
+=== Introduction
+
+The following procedure demonstrates creating a project using Infragistics Xamarin.Forms Controls.
+
+[[Prerequisites]]
+
+=== Prerequisites
+
+To complete the procedure, you need the following:
+
+* Xamarin for Visual Studio installed from link:http://xamarin.com/visual-studio[http://xamarin.com/visual-studio] website.
+* Have your application target the supported version of Xamarin.Forms, Visual Studio, Android, and iOS as outlined on our link:http://www.infragistics.com/support/supported-environments[Supported Environments Page.] 
+
+[[Steps]]
+
+=== Steps
+
+The following procedure takes you through the steps necessary for creating a project using Infragistics Xamarin.Forms controls.
+
+=== 1. Creating a new project.
+
+. Open Visual Studio
+. From the *File* menu, select *New* - * Project*
+. Select Installed - *Templates* - Visual C# - Cross Platform - Blank App (Xamarin.Forms Portable), name the project *SampleApp* .
+. This will create three separate projects:
+* SampleApp -- This is a portable class library where you can put your shared logic and layout.
+* SampleApp.*Droid* -- This is where you can put any Android specific logic or layout, and bootstraps Xamarin.Forms onto an Android device.
+* SampleApp.*iOS* -- This is where you can put any iOS specific logic or layout, and bootstraps Xamarin.Forms onto an iOS device
+
+=== 2. Increase Java Heap Size.
+. Right click SampleApp.*Android* project.
+. Select *Properties* => *Android Options* => *Advanced* .
+. Increase the Java *Max Heap* Size to *1G* .
+
+image::images\Xamarin_Creating_a_Project_01.png[alt="Increase Java Heap Size"]
+
+[[NuGetPackages]]
+=== 3. Add references through NuGet Packages.
+You can use Infragistics NuGet package as follows:
+
+. Right click on the solution node.
+. Click *Manage NuGet Packages For Solution* menu item.
+. Select Browse.
+. Type "Infragistics" into the search box.
+. According to the controls used for the solution, the following NuGet packages will install the necessary references:
++
+[cols="2", options="header"]
+|===
+|NuGet Package
+|Control
+
+|Infragistics.XF.Gauges
+
+|XamBulletGraph +
+XamLinearGauge +
+XamRadialGauge
+
+|Infragistics.XF.DataGrid
+
+|XamDataGrid
+
+|Infragistics.XF.Charts
+
+|XamDataChart +
+XamCategoryChart +
+XamPieChart +
+Legend
+
+|Infragistics.Core.Excel
+
+|Workbook +
+WorkSheet
+|===
+
++
+For each necessary NuGet Package:
+
+.. Select the package in the package browser
+.. Select all projects.
+.. Select the version of Infragistics NuGet Packages you want to use (for example, 17.0.20170.1000).
++
+.Note
+[NOTE]
+For all Infragistics NuGet Packages within the same solution, the same version must be chosen to install. Choosing to install a different version than the solution currently has will force an install of all Infragistics NuGet packages in the newly selected version.
++
+image::images\Xamarin_Creating_a_Project_02.png[alt="Choose Projects and Versions"]
+.. Click Install.
+.. Click OK to accept changes if a preview changes dialog appears.
+.. These images list Infragistics assemblies that were referenced in projects after adding all Infragistics NuGet packages. You might see subset of these assemblies if you selected only a few NuGet packages for Infragistics components:
++
+image:images\Xamarin_Creating_a_Project_Portable_Project.png[alt="Portable Project References"]
+image:images\Xamarin_Creating_a_Project_Droid_Project.png[alt="Android Project References"]
+image:images\Xamarin_Creating_a_Project_iOS_Project.png[alt="iOS Project References"]
+
+=== 4. Add namespaces.
+
+Add the following namespaces to code-behind files in which you are planning to create instances of Infragistics controls:
+
+*In XAML:*
+
+----
+xmlns:igGauges="clr-namespace:Infragistics.XamarinForms.Controls.Gauges;assembly=Infragistics.XF.Gauges"
+xmlns:igGrids="clr-namespace:Infragistics.XamarinForms.Controls.Grids;assembly=Infragistics.XF.DataGrid"
+xmlns:igCharts="clr-namespace:Infragistics.XamarinForms.Controls.Charts;assembly=Infragistics.XF.Charts"
+----
+
+*In C#:*
+
+[source,csharp]
+----
+using Infragistics.XamarinForms;
+ using Infragistics.XamarinForms.Controls.Gauges; // for XamRadialGauge, XamLinearGauge, XamBulletGraph
+ using Infragistics.XamarinForms.Controls.Charts; // for XamDataChart, XamCategoryChart, XamPieChart
+ using Infragistics.XamarinForms.Controls.Grids; // for XamDataGrid
+
+----
+
+=== 5. Ensure Assemblies are deployed.
+
+Ensure that the Infragistics.XF.$$*$$.dll assemblies are deployed and loaded by the apps on the different platforms. Depending on the deployment platform, an assembly may not be deployed, or may not be loaded unless its types are referenced, and Xamarin.Forms needs to have access to the types in Infragistics.XF.$$* $$.dll assemblies in order to render the Infragistics controls appropriately.
+
+To force these assemblies to be deployed and loaded, make sure you refer to Infragistics type in each platform specific project:
+
+. In *MainActivity.cs* under the SampleApp.*Droid* project, enter the following code snippet after the call to Forms.Init
++
+*In C#:*
++
+[source, csharp]
+----
+Infragistics.XamarinForms.Controls.Gauges.XamRadialGauge.Init();
+Infragistics.XamarinForms.Controls.Gauges.XamLinearGauge.Init();
+Infragistics.XamarinForms.Controls.Gauges.XamBulletGraph.Init();
+Infragistics.XamarinForms.Controls.Charts.XamCategoryChart.Init();
+Infragistics.XamarinForms.Controls.Charts.XamDataChart.Init();
+Infragistics.XamarinForms.Controls.Charts.XamPieChart.Init();
+Infragistics.XamarinForms.Controls.Grids.XamDataGrid.Init();
+----
+
+. In *AppDelegate.cs* under the SampleApp.*iOS* project, enter the following code snippet after the call to Forms.Init
++
+*In C#:*
++
+[source, csharp]
+----
+Infragistics.XamarinForms.Controls.Gauges.XamRadialGauge.Init();
+Infragistics.XamarinForms.Controls.Gauges.XamLinearGauge.Init();
+Infragistics.XamarinForms.Controls.Gauges.XamBulletGraph.Init();
+Infragistics.XamarinForms.Controls.Charts.XamCategoryChart.Init();
+Infragistics.XamarinForms.Controls.Charts.XamDataChart.Init();
+Infragistics.XamarinForms.Controls.Charts.XamPieChart.Init();
+Infragistics.XamarinForms.Controls.Grids.XamDataGrid.Init();
+----
+
+=== 6. Create instances of Infragistics controls
+
+Refer to the Getting Started sections under the following topics in order to create instances of Infragistics controls
+
+* link:datachart-datachart.html[Data Chart]
+* link:piechart.html[Pie Chart]
+* link:radialgauge.html[Radial Gauge]
+* link:lineargauge.html[Linear Gauge]
+* link:bulletgraph.html[Bullet Graph]

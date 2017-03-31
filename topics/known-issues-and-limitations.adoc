@@ -1,0 +1,17 @@
+﻿////
+
+|metadata|
+{
+    "name": "known-issues-and-breaking-changes",
+    "controlName": [],
+    "tags": [],
+    "guid": "cbaba02d-8411-42ef-b1c2-f362e4529f06",  
+    "buildFlags": [],
+    "createdOn": "2015-09-23T20:40:56.1283956Z"
+}
+|metadata|
+////
+
+= Known Issues and Limitations
+
+This topic provides information on known issues and/or limitations that impact the entire Infragistics Ultimate UI for Xamarin product. Please take note of these issues/limitations as you use Infragistics Ultimate UI for Xamarin. If an issue arises after a volume is released, you can visit our forums for the latest breaking changes and known issues.

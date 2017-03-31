@@ -1,0 +1,33 @@
+﻿////
+|metadata|
+{
+    "name": "home-page",
+    "controlName": [],
+    "tags": [],
+    "guid": "63705612-1a06-4fe1-ac35-29436ba75060",
+    "buildFlags": [],
+    "createdOn": "2015-09-23T20:37:25.5871327Z"
+}
+|metadata|
+////
+
+= Infragistics Xamarin.Forms {ProductVersion}
+
+The {ProductName} product is a suite of next-generation controls, designed to create polished, commercial-class line of business and data visualization applications based on Xamarin.Forms.
+
+=== One Codebase, Two Experiences
+
+Don’t stress over the training and time costs involved with learning a new platform. Use your current C# & XAML skills to architect your native apps in the same way as traditional cross-platform applications, using a single codebase. When you combine your talents with our Xamarin.Forms link:xamarin-controls[controls, components and frameworks], you’re on your way to creating native apps in no time.
+
+== Using the Help
+
+The {ProductName} help is available to assist you in finding the information that you need to understand and use the controls, components and frameworks of the {ProductName} suite.
+
+=== Online Help Version
+
+This section provides information about the online version of the {ProductName} help available on our Web site.
+
+In the online {ProductName} help, the navigation structure of the help window is comprised of the following parts:
+
+* *Search* - Use the search box to search for specific words in the help.  When you click the icon on the right side of the search box, the Search generates a list of the topics that contain at least one of the searched words, and displays the list of topics in a new page.
+* *Content Tree* - Displays sections and pages of all the topics in the online help. Click a section to expand it and view its contents (i.e., sub-sections and pages). The Content tree provides an overview of the help structure, as well as a way to easily navigate through the topics.

@@ -1,0 +1,38 @@
+﻿////
+|metadata|
+{
+    "name": "xamarin-known-issues-and-limitations",
+    "controlName": [],
+    "tags": [],
+    "guid": "16d4eb62-3de1-42f6-b07e-e1dd6d499fb8",
+    "buildFlags": [],
+    "createdOn": "2015-09-23T20:41:04.8829062Z"
+}
+|metadata|
+////
+
+= Known Issues and Limitations
+
+This topic provides information on the currently known issues and limitations related to the {ProductName} product. We will be working to address the known issues in future releases of the product.
+
+=== {DataChartName}™
+* In some edge cases the internal content sizes in the tooltip may not update on the first pixel the user moves their finger across in a Xamarin Forms datatemplated tooltip. To avoid this in the short term, avoid shrink wrap sizing a label within the data template, use appropriate margins, or try to make the label size static rather than dynamic to avoid momentarily clipped content.
+
+=== {CategoryChartName}™
+* In some edge cases the internal content sizes in the tooltip may not update on the first pixel the user moves their finger across in a Xamarin Forms datatemplated tooltip. To avoid this in the short term, avoid shrink wrap sizing a label within the data template, use appropriate margins, or try to make the label size static rather than dynamic to avoid momentarily clipped content.
+
+=== {PieChartName}™
+* There is a particular order in which creating the pie chart, setting its properties, setting the SelectionMode, adding items to the SelectedSlices collection and finally adding the pie chart to the view can cause the selection to be lost during initial rendering.  If creating the pie chart in code behind and setting SelectionMode make sure that it is one of the first properties set after instantiating the pie chart.
+
+=== {DataGridName}™
+* When using sorting or filtering and updating any properties of an item that are part of the sort applied to the grid, you must call grid.ActualDataSource.QueueAutoRefresh() after updating if you want the affected rows to be repositioned. Currently, by default, records are not repositioned due to property changes, only if they are moved, removed or added in the source collection.
+* Grid scroll bar indicators are not supported on some Android versions.
+* Some image resource loading has some performance issues on older devices for the ImageColumn. If running into performance issues, try increasing RowHeight, or changing image resource type away from EmbeddedResource. Prefer ImageColumn rather than TemplateColumn for displaying images. Exercise caution when loading image resources in Android ensuring that images are defined in the appropriate density subfolders or your images may end up getting massively scaled when loaded in ImageColumn, causing performance issues. If a small number of images is needed for a column, try using TemplateColumn with a properly implemented DateTemplateSelector in preference to ImageColumn.
+* Adding and removing items to the collection bound to the grid can cause some synchronous layout changes currently. This will be fixed, but at present if you need to add or remove large quantities of items to the grid, you may want to do this while the collection is unbound, or use a collection which isn't observable and call grid.ActualDataSource.QueueAutoRefresh() when finished updating.
+
+== CTP Features and Controls
+
+There are some features and controls that are Community Technical Preview (CTP) this release. We appreciate your feedback on these features and controls.
+
+* Stacked series for {DataChartName}. (StackedColumnSeries, StackedLineSeries, etc.)
+* PlotAreaMargin properties for {DataChartName}.

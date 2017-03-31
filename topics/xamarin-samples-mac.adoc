@@ -1,0 +1,45 @@
+﻿= How to compile Infragistics Xamarin Samples Browser in Visual Studio for Mac
+
+== Installation
+
+Download the archived version of the samples source code from Infragistics web site and extract it into a folder on Mac. For example into the '~/Documents/Apps' folder.
+
+== Compilation
+Start Visual Studio for Mac, open '~/Documents/Apps/Samples.XF.sln'
+
+=== Compiling for Android
+
+Several adjustments are necessary to the SamplesBrowser.Droid options:
+
+- Right-click on the SamplesBrowser.Droid project in the Solution Explorer. Project Options->Build->Android Build->General uncheck 'Use Shared Mono Runtime';
+image:images\android_options1.png[alt="Android Project Options - Don't Use Shared Mono Runtime"]
+- Project Options->Build->Android Build->Advanced make sure that Supported ABIs are selected.
+image:images\android_options2.png[alt="Android Project Options - Select Supported ABIs"]
+
+In the run box selection on the top of the Visual Studio make sure to select proper configuration and emulator that is being used. For example:
+
+image:images\android_run1.png[alt="Run Android project"]
+    
+Make sure that the emulator you are running the Android samples on has at least 1 GB of RAM.
+
+Build & run.
+
+The build deploys the app to the emulator but in some cases it does not run it. Look for the deployed samples in the emulator's apps and run it.
+
+=== Compiling for iOS
+
+Make sure that you have selected the proper build configuration, e.g.:
+
+image:images\ios_run1.png[alt="Run iOS project"]
+    
+Selecting simulator in the configuration above is important. Otherwise the build will fail without explanation.
+
+Build & run.
+
+== Reviewing logs
+
+Visual Studio for Mac keeps logs in a separate directory.
+
+If for some reason the build output does not provide enough information, the build logs can be found here:
+
+    Help -> Open Log Directory

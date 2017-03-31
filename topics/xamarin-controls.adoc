@@ -1,0 +1,25 @@
+﻿////
+|metadata|
+{
+    "name": "xamarin-controls",
+    "controlName": [],
+    "tags": [],
+    "guid": "3f3896c2-c32b-44f2-90b8-1312f9c0fca8",
+    "buildFlags": [],
+    "createdOn": "2015-09-23T20:38:18.8297612Z"
+}
+|metadata|
+////
+
+= Controls, Components and Frameworks
+
+The following is a list of controls available in the Infragistics Xamarin.Forms product:
+
+* link:excelengine.html[{ExcelEngineName}]
+* link:bulletgraph.html[Bullet Graph]
+* link:categorychart-overview.html[Category Chart]
+* link:datachart-datachart.html[Data Chart]
+* link:datagrid.html[Data Grid]
+* link:lineargauge.html[Linear Gauge]
+* link:piechart.html[Pie Chart]
+* link:radialgauge.html[Radial Gauge]

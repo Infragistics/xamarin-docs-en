@@ -1,0 +1,19 @@
+﻿////
+|metadata|
+{
+    "name": "xamarin-getting-started-with-xamarin",
+    "controlName": [],
+    "tags": [],
+    "guid": "e1fd6203-d9a9-46e5-b730-c094b03f7749",
+    "buildFlags": [],
+    "createdOn": "2015-09-23T20:38:36.4500317Z"
+}
+|metadata|
+////
+
+= Getting Started with Xamarin.Forms
+
+The Infragistics Xamarin help documentation assumes that you are already familiar with key concepts of Xamarin. In order to take full advantage of the power of the product, it is strongly recommended that you gain knowledge of the fundamental concepts of Xamarin. For more information on the key concepts and features, click the following links:
+
+* link:http://developer.xamarin.com/guides/[Xamarin Guides]
+* link:http://developer.xamarin.com/recipes/[Xamarin Recipes]

@@ -1,0 +1,33 @@
+﻿////
+|metadata|
+{
+    "name": "xamarin-samples",
+    "controlName": [],
+    "tags": [],
+    "guid": "c9440732-d400-48ca-b652-e73ded16274f",
+    "buildFlags": [],
+    "createdOn": "2015-09-23T20:39:17.4464668Z"
+}
+|metadata|
+////
+
+= Samples
+
+Download and run our extensive Samples Browser which displays samples for the following controls/frameworks:
+
+* {ExcelEngineName}
+* Bullet Graph
+* Category Chart
+* Data Chart
+* Data Grid
+* Linear Gauge
+* Pie Chart
+* Radial Gauge
+
+With this samples browser, you are able to learn how to use the product through individual feature-based samples. It demonstrates the powerful features provided by the Infragistics Ultimate UI for Xamarin controls.
+
+The samples browser solution contains both Android and iOS projects. You can open this solution using Visual Studio or Visual Studio for Mac.
+
+In Visual Studio for Windows right click on the project you want to run and select “*Set as startup project*”. In order to run the samples on selected platform simply hit the Run button on the Visual Studio toolbar, or choose *Debug -> Start Debugging* from the menu.
+
+On how to compile and run the samples in Visual Studio for Mac, please refer to this topic: "link:xamarin-samples-mac.html[Compile Samples Source Code on Mac]".
