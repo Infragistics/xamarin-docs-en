@@ -1,0 +1,16 @@
+﻿////
+|metadata|
+{
+    "tags": [],
+    "controlName": [""]
+}
+|metadata|
+////
+
+= Productivity Tools
+ 
+The {ProductName} product provides the following tools that can improve your productivity while working with our controls:
+ 
+* link:getting-started-with-app-map.html[App Map]
+* link:getting-started-with-control-configurators.html[Control Configurators] 
+* link:getting-started-with-toolbox.html[Infragistics Toolbox]

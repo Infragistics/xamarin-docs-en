@@ -1,0 +1,52 @@
+﻿////
+|metadata|
+{
+    "tags": [],
+    "controlName": ["Control Configurator"]
+}
+|metadata|
+////
+
+= Using Control Configurator with {PieChartName}
+   
+This topic explains how to use the Control Configurators to configure the {PieChartName} control. All general features and information on how to update the Control Configurators, are covered in the link:getting-started-with-control-configurators.html[Getting Started with Control Configurators] topic.
+
+=== Overview
+
+This topic contains the following sections:
+ 
+* <<Introduction,Introduction>> 
+* <<Updates,Updates>>
+* <<KnownIssues,Known Issues>>
+* <<Features,Features>>
+
+[[Introduction]]
+== Introduction  
+
+The Pie Chart Control Configurator is a visual tool that enables the developer to very quickly visually configure an Infragistics Xamarin.Forms {PieChartName} control with a real-time preview of the control as it is being configured. The Preview is close to how it will appear at runtime on the mobile device.
+
+Real-time sample data is created after data binding the ItemsSource is made; this sample data inflates the Pie Chart on the configurator layout surface using the types in your project.
+ 
+image:images\XamPieChartScreenShot.png[alt="{PieChartName} Configurator"]
+
+[[Updates]]
+== Updates
+
+Control Configurators are updated via the Microsoft MarketPlace.  Please ensure you have enabled auto updates to get new updates as they are published.
+
+image:images\ConfiguratorAutoUpdateScreenShot.png[alt="Ensure automatic updates are enabled"]
+
+[[KnownIssues]]
+== Known Issues
+
+Japanese text in the property grid renders in English.  This will be corrected in the next release.
+
+[[Features]]
+== Features
+  
+The following features are specific to Control Configurator for the {PieChartName}.
+
+- Real-time sample data, based on user types inflates the Pie Chart.
+- Select a gallery item to change the interactivity, layout, and labels.
+- Tweak sample data to enhance the design-time experience.
+- Add or remove a legend for the control.

@@ -1,0 +1,122 @@
+﻿////
+|metadata|
+{
+    "tags": [],
+    "controlName": ["App Map"]
+}
+|metadata|
+////
+
+= Getting Started with AppMap 
+
+This topic provides information on how to get started with the AppMap tool.
+
+=== Overview
+
+This topic contains the following sections:
+ 
+* <<Introduction,Introduction>> 
+* <<Prism,Prism>>
+* <<Updates,Updates>>
+* <<WhyUse,Why Use AppMap>>
+* <<Features,Features>>
+* <<Videos,Videos>>
+
+[[Introduction]] 
+== Introduction
+
+The AppMap is a visual diagram tool for laying out the flow of your Xamarin.Forms application.  
+
+AppMap can be used to generate new projects or add items to an existing project.
+
+When creating new projects, once you’ve completed the layout, AppMap will generate your application for you.  The code generation includes the Solution, Projects, Views and ViewModels complete with navigation code. Once generated, build and run your application. The generated application is now ready for your additional code and awesome user interfaces.
+
+When adding a new item to a project, once you’ve completed the layout, AppMap will generate the new items for you. The code generation includes Views and ViewModels complete with navigation code.  
+
+[[Prism]] 
+== Prism
+ 
+AppMap leverages the link:https://github.com/PrismLibrary/Prism[Prism framework] for navigation, inversion of control (IoC) container, messaging, page dialogs, and other common framework features.
+
+The navigation and an IoC container features are required, all others are optional. These features are implemented for you, so you’ll have no onboarding headaches.
+
+For more information, please refer to link:https://github.com/PrismLibrary/Prism/tree/master/docs/Xamarin-Forms[Prism for Xamarin.Forms Documentation] website.
+
+[[Updates]] 
+== Updates
+
+AppMap is updated via the Microsoft MarketPlace. Please ensure you have enabled auto updates to get new updates as they are published.
+
+image:images\AppMapAutoUpdateScreenShot.png[alt="Ensure automatic updates are enabled"]
+
+[[WhyUse]] 
+== Why Use AppMap
+
+What could take hours AppMap does in minutes. Xamarin.Forms navigation is feature rich and can be complicated, especially to the new Xamarin developer. AppMap simplifies this important programming step by providing a visual tool for understanding and configuring application navigation.
+
+For enterprise or line of business applications, AppMap provides a well architected, consistent application layout and structure.
+
+[[Features]] 
+== Features
+
+- Create a new Xamarin.Forms project, selecting only the native projects your application requires.
+- Add a new project item to an existing Xamarin.Forms project.
+- Visually layout the page flow, navigation between pages, and establish parent child relationships between pages.
+- View all navigation stacks and the re-rooting of the Xamarin.Forms Application MainPage.
+- Generate a well architected, testable Xamarin.Forms applications and code.
+- Generated code provides options that enable the developer to have code generated that meets their individual file structure and naming conventions.
+- AppMap registers all generated code with the IoC container in App.cs or App.xaml.cs.
+
+
+[[Videos]] 
+== Videos
+
+Each of these short videos cover an AppMap concept or feature.
+
+==== Introduction to AppMap
+
+This introduction to AppMap covers creating a new project, and an overview of the created code.
+
+++++
+<iframe width="853" height="480" src="https://www.youtube.com/embed/2vz0xBQodXs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+++++
+
+==== Prism in AppMap
+
+This video covers how Prism is used in AppMap generated Xamarin.Forms applications. The dependency injection container, Page (View), and ViewModel registration is covered.
+
+++++
+<iframe width="853" height="480" src="https://www.youtube.com/embed/bwzJEB8Y4Rg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+++++
+
+==== Creating New AppMap Project
+
+This video covers the options for creating new AppMap projects.
+
+++++
+<iframe width="853" height="480" src="https://www.youtube.com/embed/C7xCgYAeKZY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+++++
+
+==== Adding New Project Item
+
+This video covers adding a new project item to an AppMap project. Features covered are: Duplicate file name checking, enhanced code generation options, and the use of user ViewModel base classes in lieu of a AppMap provided ViewModel base class.
+
+++++
+<iframe width="853" height="480" src="https://www.youtube.com/embed/zIzHH9qko4w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+++++
+
+==== MasterDetail Layout
+
+This video explains how to properly add a MasterDetailPage and its child detail pages.
+
+++++
+<iframe width="853" height="480" src="https://www.youtube.com/embed/NAPGaVl-LTI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+++++
+
+==== Tabbed Page / Carousel Page Layout
+
+This video explains how to properly add a TabbedPage or CarouselPage and its child detail pages.
+
+++++
+<iframe width="853" height="480" src="https://www.youtube.com/embed/cU8Bcwln3PI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+++++
